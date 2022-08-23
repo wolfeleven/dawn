@@ -68,17 +68,25 @@
   fill: currentColor;
 }
 
+@media screen and (max-width: 750px) {
+  .image-with-text__content {
+    padding: 3rem 2rem 5rem 2rem !important;
+  }
+}
+
 .image-with-text__content {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: center !important;
   align-self: center;
   padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
   position: relative;
   z-index: 1;
 }
+
+
 
 .image-with-text .grid__item::after {
   content: '';
@@ -279,7 +287,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 6rem 7rem 7rem;
+    padding: 30% 20%;
   }
 }
 

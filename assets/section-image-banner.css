@@ -5,7 +5,7 @@
 }
 
 .banner__box {
-  text-align: center;
+  text-align: left !important;
 }
 
 @media only screen and (max-width: 749px) {
@@ -77,7 +77,7 @@
   }
 
   .banner--large:not(.banner--adapt) {
-    min-height: 72rem;
+    min-height: 85rem;
   }
 
   .banner__content.banner__content--top-left {
@@ -123,6 +123,12 @@
   .banner__content.banner__content--bottom-right {
     align-items: flex-end;
     justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .banner--large:not(.banner--adapt) {
+    min-height: 130rem;
   }
 }
 
@@ -243,9 +249,17 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 610px) {
   .banner__content {
     padding: 5rem;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .banner__content {
+    padding: 5rem;
+    padding-left: 15%;
   }
 
   .banner__content--top-left {
@@ -321,10 +335,22 @@
     --color-foreground: 255, 255, 255;
     --color-button: 255, 255, 255;
     --color-button-text: 0, 0, 0;
-    max-width: 89rem;
+    max-width: 69rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
+  }
+
+  .banner-product-page {
+    background-color: transparent !important;
+    max-width: 90% !important;
+    color: white;
+    text-shadow: #000000;
+  }
+
+
+  .banner-content-product-page {
+    padding: 0 !important;
   }
 
   .banner--desktop-transparent .button--secondary {
@@ -397,10 +423,18 @@
 
 .banner__heading {
   margin-bottom: 0;
+  color: black !important;
 }
 
 .banner__box .banner__heading + * {
   margin-top: 1rem;
+  color: black !important;
+}
+
+.hero-button {
+  padding: 15px 50px;
+  font-family: 'CocoSharp-Bold';
+  font-size: 1.7rem;
 }
 
 .banner__buttons {
@@ -430,6 +464,18 @@
 
   .banner--content-align-right .banner__buttons--multiple {
     justify-content: flex-end;
+  }
+
+  .h00 {
+    font-size: calc(var(--font-heading-scale) * 7rem) !important;
+  }
+
+  .h000 {
+    font-size: calc(var(--font-heading-scale) * 10rem) !important;
+  }
+
+  .banner-subtext {
+    font-size: 2.3rem !important;
   }
 }
 

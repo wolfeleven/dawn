@@ -8,6 +8,9 @@
 .price > * {
   display: inline-block;
   vertical-align: top;
+  font-size: 2rem;
+  color: #9C9C9C;
+  font-family: 'CocoSharp-Bold';
 }
 
 .price.price--unavailable {
@@ -60,6 +63,7 @@
 .price--on-sale .price__regular,
 .price--on-sale .price__availability {
   display: none;
+  color: #307BB1;
 }
 
 .price--sold-out .price__badge-sold-out,

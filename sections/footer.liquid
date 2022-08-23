@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding color-black">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -53,17 +53,17 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="color-black footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
                 {%- when 'text' -%}
-                  <div class="footer-block__details-content rte">
+                  <div class="color-black footer-block__details-content rte">
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
+                    <ul class="color-black footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
                           <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
@@ -74,7 +74,7 @@
                     </ul>
                   {%- endif -%}
                 {%- when 'image' -%}
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                  <div class="color-black footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
                       {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                       <img
@@ -98,7 +98,7 @@
 
       <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
-          <div class="footer-block__newsletter">
+          <div class="color-black footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
               <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}

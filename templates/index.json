@@ -6,22 +6,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Waffles reinvented for your physique.",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare consectetur euismod.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -35,11 +35,122 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/Viking_Waffles1181-2_extended_2c84ddc0-65a9-48f9-89e0-1a2e519134f4.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "1659128513670d5552": {
+      "type": "multicolumn",
+      "blocks": {
+        "1659128513bc5e0fab-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1659128513bc5e0fab-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nfl.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e1b4845e-8743-4d5a-8e2a-02c57ed946f6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/teenvogue.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "9c35cf13-d51a-4b0f-ba98-1ef227917d3f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/musclefitness.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659128513bc5e0fab-1",
+        "1659128513bc5e0fab-2",
+        "e1b4845e-8743-4d5a-8e2a-02c57ed946f6",
+        "9c35cf13-d51a-4b0f-ba98-1ef227917d3f"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Viking Waffles",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "viking-waffles",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "1659124669d5994012": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Viking_Waffles1408-benefits2.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
@@ -47,130 +158,106 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
+    "1659124803745b2a26": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
+        "title": "Our Viking Spreads",
+        "heading_size": "h0",
         "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "protein-spreads",
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "1659405461560683de": {
+      "type": "image-with-text-about-us",
       "blocks": {
-        "column1": {
+        "16594054617211b572-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Born in Norway",
+            "heading_second": "Made in New York",
+            "heading_size": "h0"
+          }
+        },
+        "16594054617211b572-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "16594054617211b572-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "About Us",
+            "button_link": "shopify:\/\/pages\/about-us"
+          }
+        }
+      },
+      "block_order": [
+        "16594054617211b572-0",
+        "16594054617211b572-1",
+        "16594054617211b572-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-08-01_at_9.15.02_PM.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165940994440fe59a0": {
+      "type": "multicolumn-three-reasons",
+      "blocks": {
+        "16594099441b06593b-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-07-30_at_8.24.31_PM.png",
+            "title": "Traditional Norwegian Recipe",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "16594099441b06593b-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-07-30_at_8.24.40_PM.png",
+            "title": "Handmade & Freshly Bakes",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column3": {
+        "16594099441b06593b-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-07-30_at_8.24.47_PM.png",
+            "title": "Clean Healthy Ingredients",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -178,12 +265,12 @@
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "16594099441b06593b-0",
+        "16594099441b06593b-1",
+        "16594099441b06593b-2"
       ],
       "settings": {
-        "title": "",
+        "title": "Do not remove this text",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -192,20 +279,151 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "165940622895a01074": {
+      "type": "image-with-text-recipes",
+      "blocks": {
+        "165940622816b83bff-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get creative, everyday.",
+            "heading_size": "h0"
+          }
+        },
+        "165940622816b83bff-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "165940622816b83bff-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See Recipes",
+            "button_link": "shopify:\/\/pages\/viking-waffles-preparation-methods"
+          }
+        }
+      },
+      "block_order": [
+        "165940622816b83bff-0",
+        "165940622816b83bff-1",
+        "165940622816b83bff-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GIF_1.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165955446866d703d5": {
+      "type": "multicolumn",
+      "blocks": {
+        "1659554468511d2330-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dolph-min.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1659554468511d2330-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shannonsharpe-min_1002ba4c-c0ca-43df-a9ea-d13ad9779326.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1659554468511d2330-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tylerchrome-min.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "60e35687-ab73-48c8-86c3-87a40dd552a8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chriswragge-min.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1659554468511d2330-0",
+        "1659554468511d2330-1",
+        "1659554468511d2330-2",
+        "60e35687-ab73-48c8-86c3-87a40dd552a8"
+      ],
+      "settings": {
+        "title": "Loved by real life Vikings",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165972605774c7ab37": {
+      "type": "multicolum-social-media",
+      "settings": {
+        "title": "Join our Viking Tribe",
+        "tiktok_url": "https:\/\/www.tiktok.com\/@vikingwaffles\/video\/7098516067290500394",
+        "tiktok_video_id": "7098516067290500394",
+        "instagram_collage_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0842\/6265\/files\/ig_1.png?v=1659662838"
+      }
+    },
+    "16591255482e4a28ab": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
+    "1659128513670d5552",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "1659124669d5994012",
+    "1659124803745b2a26",
+    "1659405461560683de",
+    "165940994440fe59a0",
+    "165940622895a01074",
+    "165955446866d703d5",
+    "165972605774c7ab37",
+    "16591255482e4a28ab"
   ]
 }

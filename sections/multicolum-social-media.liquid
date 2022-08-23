@@ -1,0 +1,89 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+  assign show_mobile_slider = false
+  if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
+    assign show_mobile_slider = true
+  endif
+-%}
+
+<div class="multicolumn-social-media multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div class="multicolumn-social-media-section section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin width-100 text-center">
+        <h1 class="title h0 width-100 text-center">
+          {{ section.settings.title | escape }}
+        </h1>
+        {%- if section.settings.button_label != blank and show_mobile_slider -%}
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+    <slider-component class="slider-mobile-gutter">
+      <ul class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--2-col-desktop" id="Slider-{{ section.id }}" role="list">
+        <li id="Slide-{{ section.id }}-1" class="multicolumn-list__item grid__item center" style="justify-content: right;">
+          <h2>TikTok @vikingwaffles</h2>
+          <blockquote class="tiktok-embed" cite="{{ section.settings.tiktok_url }}" data-video-id="{{ section.settings.tiktok_video_id }}" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@vikingwaffles" href="https://www.tiktok.com/@vikingwaffles">@vikingwaffles</a> 
+          </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </li>
+        <li id="Slide-{{ section.id }}-1" class="multicolumn-list__item grid__item center">
+          <h2>Instagram @viking.waffles</h2>
+          <img src="{{ section.settings.instagram_collage_url }}" loading="lazy" class="width-100" />
+        </li>
+      </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.multicolumn-social-media.name",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Join Our Viking Tribe",
+      "label": "t:sections.multicolumn-social-media.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "tiktok_url",
+      "label": "t:sections.multicolumn-social-media.settings.tiktok_url.label"
+    },
+    {
+      "type": "text",
+      "id": "tiktok_video_id",
+      "label": "t:sections.multicolumn-social-media.settings.tiktok_video_id.label"
+    },
+    {
+      "type": "text",
+      "id": "instagram_collage_url",
+      "default": "https://cdn.shopify.com/s/files/1/0842/6265/files/ig_1.png?v=1659662838",
+      "label": "t:sections.multicolumn-social-media.settings.instagram_collage_url.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.multicolumn-social-media.presets.name"
+    }
+  ]
+}
+{% endschema %}
